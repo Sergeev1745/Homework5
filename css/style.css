@@ -20,8 +20,8 @@ body {
 	font-family: helvetica;
 }
 .main-wrapper{
-	width: 1215px;
-	min-height: 1064px;
+	width: 100%;
+	height: 100vh;
 	margin: 0 auto;
 	padding: 0;
 	box-shadow: 0 3px 5px;
@@ -61,7 +61,7 @@ nav a:hover{
 	display: block;
 	border-left: 1px solid #56a2dc;
 	margin: 3px 0;
-	background: url(../img/flag.png) 20px 5px no-repeat;
+	background: url(../img/Flag.png) 20px 5px no-repeat;
 }
 .login-button {
 	float: right;
@@ -82,8 +82,11 @@ nav a:hover{
 
 /*CONTENT*/
 .wrapper{
-	height: 1028px;
-	background: url(../img/bg.jpg);
+	
+	
+	min-height: 96%;
+	background: url(../img/bg.jpg) 50% 50% no-repeat;
+	background-size: 100%;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -124,13 +127,17 @@ nav a:hover{
 form {
 	color: #ccc;
 	font-size: 14px;
-
 }
-form span{
+
+form label{
 	font-size: 14px;
 	font-weight: lighter;
+
 }
+
 .text {
+	display: block;
+	margin:0 auto;
 	width: 276px;
 	margin-bottom: 15px;
 	padding: 10px 20px;
@@ -139,6 +146,7 @@ form span{
 	border-bottom: 1px solid #484846;
 	color: #ccc;
 }
+
 .text:focus{
 	background-color: #1b5288;
 	color:#fff;
@@ -148,7 +156,7 @@ form span{
 	outline: 0;
 }
 .checkbox{
-	margin: 10px 10px 10px -70px;
+	margin: 10px 10px 10px -60px;
 
 }
 .button{
@@ -159,6 +167,9 @@ form span{
 	border: 0;
 	color: #ccc;
 	font-weight: bold;
+}
+.button:hover{
+	cursor: pointer;
 }
 .wrapper-form p{
 	color: #ccc;
